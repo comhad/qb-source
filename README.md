@@ -6,6 +6,25 @@ If you used QuoteBot, you would have known there was a dashboard to upload sprit
 
 There's two different types of generators, the old generator refers to the generator ran by Demi, and the new generator refers to the one created by me. I can't entirely remember why I seperated them, but the new generator uses custom sprites, where the old generator just uses discord profile pictures and UNDERTALE/DELTARUNE sprites, use `help quote` for more info on these.
 
-# TODO
-- connect textbox generator properly
-- deploy on clean interface
+**This tutorial assumes you have some experience coding**
+
+# How do I use it?
+You'll need to download the repo to your computer. After this, start by editing `auth.json` to contain the following details.
+
+```
+{
+	"bot":"yourtoken",
+	"prefix":",",
+	"new_generator" : 1,
+	"delete_message" : 0,
+	"delete_command" : 0
+}
+```
+
+Check `quotebot.py` for more details on what these mean.
+
+Next, create a `sprites.db` using `sqlite3 sprites.db`, and running `.read custom_db.sql` when in the terminal.
+
+Then install `requirements.txt` using `pip`.
+
+Once this is done, clone `https://github.com/comhad/textbox-generator` into the same directory, and change the name of the folder to `tb`.
