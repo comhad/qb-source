@@ -1,0 +1,10 @@
+auth.json
+*.sqlite
+*.pyc
+sprites.db
+tb
+__pycache__
+bin
+include
+lib
+lib64
